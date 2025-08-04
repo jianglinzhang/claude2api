@@ -23,5 +23,8 @@ FROM alpine:latest
 WORKDIR /app  
 COPY --from=build /app/main .  
 
+USER 10014
+
 # Command to run the executable  
+
 CMD ["./main"]  
